@@ -3,7 +3,7 @@
 <a href="http://jinnianshilongnian.iteye.com/" target="_blank">我的博客</a> | <a href="http://url.cn/MViZN0">点击加134755960 QQ群讨论</a> | <a href="http://demo.kaifazhe.me/es/admin/index" target="_blank">演示地址（感谢134755960群友Panda支持）</a>(admin/123456 请不要执行增删改操作 谢谢)
 
 
-##介绍
+## 介绍
 * ES是一个JavaEE企业级项目的快速开发的脚手架，提供了底层抽象和通用功能，拿来即用。
 
 ### 核心功能
@@ -74,11 +74,11 @@
 * <a href="https://github.com/zhangkaitao/es/blob/master/src/support/img/3.PNG?raw=true" target="_blank">点击查看3</a>
 
 
-##CI status
-<a href="https://travis-ci.org/zhangkaitao/es"><img src="https://travis-ci.org/zhangkaitao/es.png"/></a>
+## CI status
+<a href="https://travis-ci.org/Bobjoy/es"><img src="https://travis-ci.org/Bobjoy/es.png"/></a>
 
 
-##如何运行
+## 如何运行
 
 #### 1、到es/web/pom.xml修改数据库配置：
 *  默认修改：profiles/profile/development下的
