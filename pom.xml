@@ -79,6 +79,13 @@
             <url>http://repo.maven.apache.org/maven2</url>
         </repository>
 
+        <!-- jcaptcha-integration-simple-servlet -->
+        <repository>
+            <id>artifactory</id>
+            <name>Repository for Artifactory</name>
+            <url>http://artifactory.itcrowd.pl/repo</url>
+        </repository>
+
         <repository>
             <id>maven-repo1</id>
             <name>maven-repo1</name>
