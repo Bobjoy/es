@@ -97,3 +97,65 @@
 ####3、注意
 如果你是用mvn jetty:run启动项目，默认会执行speed-up 应用，不过可以到src/main/resources/spring-speed-up.xml中把profile="development"改成任意其他的即可，或者删除<br/>
 请参考<a href='http://jinnianshilongnian.iteye.com/blog/1883013'>加速spring/hibernate应用调试时启动速度</a>
+
+## 问题补充
+
+####1、oschina和cloudhopper的maven仓库无效了，需要删除位于项目目录下 `pom.xml` 如下代码
+
+* oschina仓库
+
+```xml
+<!-- 依赖仓库 -->
+<repository>
+    <id>oschina Releases</id>
+    <name>oschina Releases</name>
+    <url>http://maven.oschina.net/content/groups/public</url>
+</repository>
+
+<!-- 插件仓库 -->
+<pluginRepository>
+    <id>oschina Releases</id>
+    <name>oschina Releases</name>
+    <url>http://maven.oschina.net/content/groups/public</url>
+</pluginRepository>
+```
+
+* cloudhopper仓库
+
+```xml
+<repository>
+    <id>cloudhopper</id>
+    <name>Repository for Cloudhopper</name>
+    <url>http://maven.cloudhopper.com/repos/third-party/</url>
+</repository>
+```
+
+####2、jcaptcha的jar包无法从sourceforge-releases仓库下载，将其修改为如下
+
+```xml
+<repository>
+    <id>atlassian</id>
+    <name>Repository for Atlassian</name>
+    <url>https://maven.atlassian.com/3rdparty/</url>
+</repository>
+```
+
+####3、maven-db-plugin无法下载，需要手动下载 [maven-db-plugin-1.4.zip](https://pan.baidu.com/s/1ge7B6qn)，然后解压并拷贝到以下目录：
+
+```
+$MVN_REPO/com/googlecode/maven-db-plugin/1.4
+```
+
+> 默认情况下$MVN_REPO，位于{用户目录}/.m2
+
+####4、无法下载，需要手动下载[jcaptcha-integration-simple-servlet-2.0-alpha-1-SNAPSHOT.jar](https://pan.baidu.com/s/1pLoEBP5)，然后执行如下命令：
+
+```bash
+mvn install:install-file \
+    -Dfile=jcaptcha-integration-simple-servlet-2.0-alpha-1-SNAPSHOT.jar \
+    -DgroupId=com.octo.captcha \
+    -DartifactId=jcaptcha-integration-simple-servlet \
+    -Dversion=2.0-alpha-1 \
+    -Dpackaging=jar \
+    -DgeneratePom=true
+```

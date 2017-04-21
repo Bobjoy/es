@@ -9,7 +9,6 @@ import com.sishuok.es.common.service.BaseService;
 import com.sishuok.es.personal.calendar.entity.Calendar;
 import com.sishuok.es.personal.calendar.repository.CalendarRepository;
 import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.sql.Time;
@@ -40,10 +39,12 @@ public class CalendarService extends BaseService<Calendar, Long> {
     //     10 11  10-19
     public Long countRecentlyCalendar(Long userId, Integer interval) {
         Date nowDate = new Date();
-        Date nowTime = new Time(nowDate.getHours(), nowDate.getMinutes(), nowDate.getSeconds());
-        nowDate.setHours(0);
-        nowDate.setMinutes(0);
-        nowDate.setSeconds(0);
+
+        java.util.Calendar calendar = java.util.Calendar.getInstance();
+        calendar.set(java.util.Calendar.HOUR_OF_DAY, 0);
+        calendar.set(java.util.Calendar.MINUTE, 0);
+        calendar.set(java.util.Calendar.SECOND, 0);
+        Date nowTime = new Time(calendar.getTimeInMillis());
 
         return getCalendarRepository().countRecentlyCalendar(userId, nowDate, nowTime, interval);
     }

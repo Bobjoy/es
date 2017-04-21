@@ -41,12 +41,6 @@
     <repositories>
 
         <repository>
-            <id>oschina Releases</id>
-            <name>oschina Releases</name>
-            <url>http://maven.oschina.net/content/groups/public</url>
-        </repository>
-
-        <repository>
             <id>apache-repo</id>
             <name>apache Repository</name>
             <url>https://repository.apache.org/content/groups/public/</url>
@@ -67,41 +61,33 @@
             <url>http://repo.spring.io/snapshot/</url>
         </repository>
         <repository>
-            <id>cloudhopper</id>
-            <name>Repository for Cloudhopper</name>
-            <url>http://maven.cloudhopper.com/repos/third-party/</url>
+            <id>atlassian</id>
+            <name>Repository for Atlassian</name>
+            <url>https://maven.atlassian.com/3rdparty/</url>
         </repository>
         <repository>
             <id>jboss-repo-releases</id>
             <name>Jboss Repository</name>
             <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
         </repository>
+
+        <!-- JCaptcha -->
         <repository>
             <id>central</id>
             <name>Maven Repository Switchboard</name>
             <layout>default</layout>
             <url>http://repo.maven.apache.org/maven2</url>
         </repository>
+
         <repository>
             <id>maven-repo1</id>
             <name>maven-repo1</name>
             <layout>default</layout>
             <url>http://repo1.maven.org/maven2/</url>
         </repository>
-        <repository>
-            <id>sourceforge-releases</id>
-            <name>Sourceforge Releases</name>
-            <url>https://oss.sonatype.org/content/repositories/sourceforge-releases</url>
-        </repository>
 
     </repositories>
     <pluginRepositories>
-
-        <pluginRepository>
-            <id>oschina Releases</id>
-            <name>oschina Releases</name>
-            <url>http://maven.oschina.net/content/groups/public</url>
-        </pluginRepository>
 
         <pluginRepository>
             <id>maven2-repo</id>
