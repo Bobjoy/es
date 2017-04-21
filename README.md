@@ -60,14 +60,14 @@
 ####
  * 本脚手架会选型技术的最新版本
 
-###支持的浏览器
+### 支持的浏览器
  * chrome
  * firefox（目前使用firefox 19.0.2测试）
  * opera 12
  * ie7及以上（建议ie9以上，获取更好的体验）
  * 其他浏览器暂时未测试
 
-###系统界面截图
+### 系统界面截图
 * <a href="http://demo.kaifazhe.me/es/admin/index" target="_blank">演示地址（感谢134755960群友Panda支持）</a>
 * <a href="https://github.com/zhangkaitao/es/blob/master/src/support/img/1.PNG?raw=true" target="_blank">点击查看1</a>
 * <a href="https://github.com/zhangkaitao/es/blob/master/src/support/img/2.PNG?raw=true" target="_blank">点击查看2</a>
@@ -80,13 +80,13 @@
 
 ##如何运行
 
-####1、到es/web/pom.xml修改数据库配置：
+#### 1、到es/web/pom.xml修改数据库配置：
 *  默认修改：profiles/profile/development下的
 *  connection.admin.url
 *  connection.username
 *  connection.password
 
-####2、到项目的根下(es)
+#### 2、到项目的根下(es)
 * cd bin
 * install.bat 安装jar包到本地仓库（jdk6即可）
 * create-db.bat 创建数据库（mysql需要5.5及以上 编码为utf-8）
@@ -94,13 +94,13 @@
 * jetty.bat 启动web应用 默认端口9080 可以到es/web/pom.xml下修改（servlet 2.5即可）
 * 系统默认帐户是admin/123456
 
-####3、注意
+#### 3、注意
 如果你是用mvn jetty:run启动项目，默认会执行speed-up 应用，不过可以到src/main/resources/spring-speed-up.xml中把profile="development"改成任意其他的即可，或者删除<br/>
 请参考<a href='http://jinnianshilongnian.iteye.com/blog/1883013'>加速spring/hibernate应用调试时启动速度</a>
 
 ## 问题补充
 
-####1、oschina和cloudhopper的maven仓库无效了，需要删除位于项目目录下 `pom.xml` 如下代码
+#### 1、oschina和cloudhopper的maven仓库无效了，需要删除位于项目目录下 `pom.xml` 如下代码
 
 * oschina仓库
 
@@ -130,7 +130,7 @@
 </repository>
 ```
 
-####2、jcaptcha的jar包无法从sourceforge-releases仓库下载，将其修改为如下
+#### 2、jcaptcha的jar包无法从sourceforge-releases仓库下载，将其修改为如下
 
 ```xml
 <repository>
@@ -140,7 +140,7 @@
 </repository>
 ```
 
-####3、maven-db-plugin无法下载，需要手动下载 [maven-db-plugin-1.4.zip](https://pan.baidu.com/s/1ge7B6qn)，然后解压并拷贝到以下目录：
+#### 3、maven-db-plugin无法下载，需要手动下载 [maven-db-plugin-1.4.zip](https://pan.baidu.com/s/1ge7B6qn)，然后解压并拷贝到以下目录：
 
 ```
 $MVN_REPO/com/googlecode/maven-db-plugin/1.4
@@ -148,7 +148,7 @@ $MVN_REPO/com/googlecode/maven-db-plugin/1.4
 
 > 默认情况下$MVN_REPO，位于{用户目录}/.m2
 
-####4、无法下载，需要手动下载[jcaptcha-integration-simple-servlet-2.0-alpha-1-SNAPSHOT.jar](https://pan.baidu.com/s/1pLoEBP5)，然后执行如下命令：
+#### 4、无法下载，需要手动下载[jcaptcha-integration-simple-servlet-2.0-alpha-1-SNAPSHOT.jar](https://pan.baidu.com/s/1pLoEBP5)，然后执行如下命令：
 
 ```bash
 mvn install:install-file \
