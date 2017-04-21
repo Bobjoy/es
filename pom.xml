@@ -117,9 +117,9 @@
     <!-- 开发人员信息 -->
     <developers>
         <developer>
-            <name>zhankaitao</name>
-            <email>zhangkaitao0503@gmail.com</email>
-            <url>https://github.com/zhangkaitao</url>
+            <name>bobjoy</name>
+            <email>bobjoy1010@163.com</email>
+            <url>https://github.com/Bobjoy</url>
             <roles>
                 <role>software engineer</role>
             </roles>
@@ -138,7 +138,7 @@
     <!-- 持续集成信息 -->
     <ciManagement>
         <system>continuum</system>
-        <url>https://travis-ci.org/zhangkaitao/es</url>
+        <url>https://travis-ci.org/Bobjoy/es</url>
         <notifiers>
             <notifier>
                 <type>mail</type>
@@ -147,7 +147,7 @@
                 <sendOnSuccess>true</sendOnSuccess>
                 <sendOnWarning>false</sendOnWarning>
                 <configuration>
-                    <address>zhangkaitao0503@gmail.com</address>
+                    <address>bobjoy1010@163.com</address>
                 </configuration>
             </notifier>
         </notifiers>
