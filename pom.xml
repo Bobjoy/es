@@ -41,42 +41,39 @@
     <repositories>
 
         <repository>
+            <id>ali-repo</id>
+            <name>Ali Repository</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>
+
+        <repository>
             <id>apache-repo</id>
             <name>apache Repository</name>
             <url>https://repository.apache.org/content/groups/public/</url>
         </repository>
+
         <repository>
             <id>java-repo</id>
             <name>java Repository</name>
             <url>http://download.java.net/maven/2/</url>
         </repository>
+
         <repository>
             <id>springsource-repo</id>
             <name>SpringSource Repository</name>
             <url>http://repo.spring.io/release/</url>
         </repository>
+
         <repository>
             <id>springsource-repo-snapshot</id>
             <name>SpringSource Repository</name>
             <url>http://repo.spring.io/snapshot/</url>
         </repository>
+
         <repository>
             <id>atlassian</id>
             <name>Repository for Atlassian</name>
             <url>https://maven.atlassian.com/3rdparty/</url>
-        </repository>
-        <repository>
-            <id>jboss-repo-releases</id>
-            <name>Jboss Repository</name>
-            <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
-        </repository>
-
-        <!-- JCaptcha -->
-        <repository>
-            <id>central</id>
-            <name>Maven Repository Switchboard</name>
-            <layout>default</layout>
-            <url>http://repo.maven.apache.org/maven2</url>
         </repository>
 
         <!-- jcaptcha-integration-simple-servlet -->
@@ -86,11 +83,12 @@
             <url>http://artifactory.itcrowd.pl/repo</url>
         </repository>
 
+        <!-- JCaptcha -->
         <repository>
-            <id>maven-repo1</id>
-            <name>maven-repo1</name>
+            <id>central</id>
+            <name>Maven Repository Switchboard</name>
             <layout>default</layout>
-            <url>http://repo1.maven.org/maven2/</url>
+            <url>http://repo.maven.apache.org/maven2</url>
         </repository>
 
     </repositories>

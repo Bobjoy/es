@@ -232,7 +232,7 @@
                     <![CDATA[jdbc:mysql://localhost:3306/${db.name}?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8]]>
                 </connection.url>
                 <connection.username>root</connection.username>
-                <connection.password>123456</connection.password>
+                <connection.password/>
                 <jpa.showSql>true</jpa.showSql>
                 <jpa.generateDdl>false</jpa.generateDdl>
                 <jpa.database>MYSQL</jpa.database>
@@ -257,7 +257,7 @@
                     <![CDATA[jdbc:mysql://localhost:3306/${db.name}?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8]]>
                 </connection.url>
                 <connection.username>root</connection.username>
-                <connection.password>123456</connection.password>
+                <connection.password/>
                 <jpa.showSql>false</jpa.showSql>
                 <jpa.generateDdl>false</jpa.generateDdl>
                 <jpa.database>MYSQL</jpa.database>
@@ -284,7 +284,7 @@
                     <![CDATA[jdbc:mysql://localhost:3306/${db.name}?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8]]>
                 </connection.url>
                 <connection.username>root</connection.username>
-                <connection.password>123456</connection.password>
+                <connection.password/>
                 <jpa.showSql>false</jpa.showSql>
                 <jpa.generateDdl>false</jpa.generateDdl>
                 <jpa.database>MYSQL</jpa.database>
