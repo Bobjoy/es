@@ -81,20 +81,24 @@
 <es:contentFooter/>
 <script type="text/javascript">
     $(function() {
-        $("#username").focus();
-        $(".jcaptcha-btn").click(function() {
-            var img = $(".jcaptcha-img");
-            var imageSrc = img.attr("src");
-            if(imageSrc.indexOf("?") > 0) {
-                imageSrc = imageSrc.substr(0, imageSrc.indexOf("?"));
-            }
-            imageSrc = imageSrc + "?" + new Date().getTime();
-            img.attr("src", imageSrc);
-        });
-        $.validationEngineLanguage.allRules.ajaxJcaptchaCall={
-            "url": "${ctx}/jcaptcha-validate",
-            "alertTextLoad": "* 正在验证，请稍等。。。"
-        };
-        $("#loginForm").validationEngine({scroll:false});
+        if (window.top !== window) {
+            window.top.location.href = location.href;
+        } else {
+            $("#username").focus();
+            $(".jcaptcha-btn").click(function() {
+                var img = $(".jcaptcha-img");
+                var imageSrc = img.attr("src");
+                if(imageSrc.indexOf("?") > 0) {
+                    imageSrc = imageSrc.substr(0, imageSrc.indexOf("?"));
+                }
+                imageSrc = imageSrc + "?" + new Date().getTime();
+                img.attr("src", imageSrc);
+            });
+            $.validationEngineLanguage.allRules.ajaxJcaptchaCall={
+                "url": "${ctx}/jcaptcha-validate",
+                "alertTextLoad": "* 正在验证，请稍等。。。"
+            };
+            $("#loginForm").validationEngine({scroll:false});
+        }
     });
 </script>
