@@ -127,6 +127,19 @@
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
 
+	<filter>
+		<filter-name>sitemesh</filter-name>
+		<filter-class>org.sitemesh.config.ConfigurableSiteMeshFilter</filter-class>
+		<init-param>
+			<param-name>configFile</param-name>
+			<param-value>/WEB-INF/sitemesh3.xml</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>sitemesh</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
 	<!-- druid监控 -->
 	<servlet>
 		<servlet-name>DruidStatView</servlet-name>

@@ -204,6 +204,12 @@
 			<version>0.1.4</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.sitemesh</groupId>
+			<artifactId>sitemesh</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+
     </dependencies>
 
 

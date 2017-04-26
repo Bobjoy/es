@@ -1,0 +1,26 @@
+<sitemesh>
+
+	<!-- 默认 SiteMesh 只对HTTP响应头中Content-Type为 text/html 的类型进行拦截和装饰，若需要处理其它mime类型需要自行添加配置 -->
+	<mime-type>text/html</mime-type>
+
+	<!-- 配置装饰器，仅设置decorator参数时表示为默认的装饰器，当没有任何路径被匹配时会使用默认装饰器装配 -->
+	<!--<mapping decorator="/WEB-INF/decorators/decorator.jsp"/>-->
+
+	<!-- 对不同的路径指定特定的装饰器 -->
+	<!--<mapping path="/admin/*" decorator="/WEB-INF/decorators/layout.jsp"/>-->
+
+	<!-- 对同一路径可以同时使用多个装饰器 -->
+	<mapping>
+		<path>/admin/*</path>
+		<decorator>/WEB-INF/decorators/page.jsp</decorator>
+		<decorator>/WEB-INF/decorators/layout.jsp</decorator>
+	</mapping>
+
+	<!-- 排除路径，只需将exclue设置为true即可 -->
+	<mapping path="/static/*" exclue="true"/>
+
+	<!-- 默认SiteMesh仅支持title、head、meta、body等tag,可以自定义tag，实现TagRuleBundle接口即可 -->
+	<content-processor>
+		<tag-rule-bundle class="com.bfl.es.utils.FootTagRuleBundle"/>
+	</content-processor>
+</sitemesh>
