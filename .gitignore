@@ -2,6 +2,7 @@
 .project
 .springBeans
 .settings/
+.DS_Store
 target/
 *.iml
 .idea/
