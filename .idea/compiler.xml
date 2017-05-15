@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="es-common" />
+        <module name="es-web" />
+        <module name="es-web3" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="es" target="1.5" />
+      <module name="es-common" target="1.7" />
+      <module name="es-parent" target="1.7" />
+      <module name="es-web" target="1.7" />
+      <module name="es-web2" target="1.7" />
+      <module name="es-web3" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

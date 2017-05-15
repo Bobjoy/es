@@ -159,46 +159,20 @@
             <artifactId>es-common</artifactId>
             <version>${sishuok.common.version}</version>
         </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>${mysql.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.yahoo.platform.yui</groupId>
-            <artifactId>yuicompressor</artifactId>
-            <version>${yui.compressor.version}</version>
-        </dependency>
-
 
         <!-- x-gen user -->
-        <!--<dependency>-->
-            <!--<groupId>com.sishuok</groupId>-->
-            <!--<artifactId>x-gen</artifactId>-->
-            <!--<version>1.0</version>-->
-            <!--<scope>provided</scope>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>bsh</groupId>-->
-            <!--<artifactId>bsh</artifactId>-->
-            <!--<version>1.3.0</version>-->
-            <!--<scope>provided</scope>-->
-        <!--</dependency>-->
-
-        <!-- poi:office word/excel/power point…… -->
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi</artifactId>
-            <version>3.9</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-            <version>3.9</version>
-        </dependency>
-
-
+        <!--<dependency>
+            <groupId>com.sishuok</groupId>
+            <artifactId>x-gen</artifactId>
+            <version>1.0</version>
+            <scope>provided</scope>
+        </dependency>-->
+        <!--<dependency>
+            <groupId>bsh</groupId>
+            <artifactId>bsh</artifactId>
+            <version>1.3.0</version>
+            <scope>provided</scope>
+        </dependency>-->
 
     </dependencies>
 
@@ -209,8 +183,6 @@
         <tomcat.maven.version>2.2</tomcat.maven.version>
         <support.basedir>${project.parent.parent.basedir}/src/support</support.basedir>
         <site.basedir>${project.parent.parent.basedir}</site.basedir>
-        <mysql.version>5.1.27</mysql.version>
-        <yui.compressor.version>2.4.2</yui.compressor.version>
 
         <codegen.version>1.0-SNAPSHOT</codegen.version>
     </properties>

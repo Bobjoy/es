@@ -5,5 +5,9 @@
 .DS_Store
 target/
 *.iml
-.idea/
+.idea/**
 web2/src/main/webapp/static/plugins
+!.idea/dataSources.xml
+!.idea/dataSources.local.xml
+!.idea/modules.xml
+!.idea/compiler.xml

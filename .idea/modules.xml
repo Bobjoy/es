@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/es.iml" filepath="$PROJECT_DIR$/es.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/es-common.iml" filepath="$PROJECT_DIR$/common/es-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web3/es-html.iml" filepath="$PROJECT_DIR$/web3/es-html.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/es-parent.iml" filepath="$PROJECT_DIR$/parent/es-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/es-web.iml" filepath="$PROJECT_DIR$/web/es-web.iml" />
+    </modules>
+  </component>
+</project>
